@@ -1,0 +1,222 @@
+{
+    "Head": {
+        "ResponseTime": "2016-11-01T15:55:15.4865092+08:00",
+        "ReceiveTime": "2016-11-01T15:55:15.4553091+08:00",
+        "ResultMsg": "航班查询成功",
+        "ResultCode": 1,
+        "RequestTime": "2016-11-01",
+        "SessionId": null
+    },
+    "ResponseBody": {
+        "PolicyRuleList": [
+            {
+                "TravelerCategory": "Child",
+                "CanUpgrade": false,
+                "Index": 43,
+                "ChangeRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时（含）外需收取票面价5%的更改费，2小时内需收取票面价10%的变更费，起飞后需收取票面价30%的变更费。改期费与升舱费同时发生时，需同时收取，低于50元时按50元收。（婴儿免收）",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。旅客享有20KG免费托运行李。婴儿无免费行李额^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours. 20kg free baggage allowance. No free baggage allowance for infants.^",
+                    "RuleNote_En": "5% of fare charged if change at least 2 hours before departure, 10% of fare charged if change 2 hours within departure; 30% of fare charged if change after departure. Both date change fee and price difference charged when date change and upgrade occurred together (minimum CNY50 charge)."
+                },
+                "RefundFeeFormulaID": "260",
+                "IsPackageProduct": "false",
+                "FeeInfoList": [
+                    {
+                        "FeeType": "TAX",
+                        "Fee": 0
+                    },
+                    {
+                        "FeeType": "FUELSURCHARGE",
+                        "Fee": 0
+                    }
+                ],
+                "EndorseRule": {
+                    "RuleRestriction": "T",
+                    "RuleNote": "不得签转。",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。旅客享有20KG免费托运行李。婴儿无免费行李额^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours. 20kg free baggage allowance. No free baggage allowance for infants.^",
+                    "RuleNote_En": "No endorsement."
+                },
+                "RefundRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时（含）以外需收取票面价10％的退票费，2小时内需收取票面价20％的退票费，起飞后需收取票面价50％的退票费。退票费低于50元时按50元收取。（婴儿免收退票费）。",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。旅客享有20KG免费托运行李。婴儿无免费行李额^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours. 20kg free baggage allowance. No free baggage allowance for infants.^",
+                    "RuleNote_En": "10% of fare charged if refund at least 2 hours before departure, 20% of fare charged if refund 2 hours within departure; 50% of fare charged if refund after departure (minimum CNY50 charge)(free refund for infants)."
+                },
+                "TicketType": "NA"
+            },
+            {
+                "TravelerCategory": "Adult",
+                "CanUpgrade": false,
+                "Index": 44,
+                "ChangeRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时之前的改期手续费按票面价收取5%，起飞前2小时（含）以内至起飞前收取10%，起飞后收取30%；改期费与升舱费同时发生，需同时收取.",
+                    "RuleRemarks": "旅客可免费携带一件重量不超过10公斤、尺寸不超过40CM×30CM×20CM的非托运行李。无免费餐饮服务。航班延误或取消，不提供经济补偿。^^",
+                    "RuleRemarks_En": "First piece of carry-on baggage is free, maximum weight 10 kg, each piece limited to 20 x 30 x 40 cm in size. Checked baggage requires an additional charge. Meals not included. Compensation not provided in the event of flight cancelation or delay.",
+                    "RuleNote_En": "Conditional modification."
+                },
+                "RefundFeeFormulaID": "2306032",
+                "IsPackageProduct": "false",
+                "FeeInfoList": [
+                    {
+                        "FeeType": "TAX",
+                        "Fee": 50
+                    },
+                    {
+                        "FeeType": "FUELSURCHARGE",
+                        "Fee": 0
+                    }
+                ],
+                "EndorseRule": {
+                    "RuleRestriction": "T",
+                    "RuleNote": "不得签转。",
+                    "RuleRemarks": "旅客可免费携带一件重量不超过10公斤、尺寸不超过40CM×30CM×20CM的非托运行李。无免费餐饮服务。航班延误或取消，不提供经济补偿。^^",
+                    "RuleRemarks_En": "First piece of carry-on baggage is free, maximum weight 10 kg, each piece limited to 20 x 30 x 40 cm in size. Checked baggage requires an additional charge. Meals not included. Compensation not provided in the event of flight cancelation or delay.",
+                    "RuleNote_En": "No endorsement."
+                },
+                "RefundRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时之前的产品退订手续费按票面价收取10%，起飞前2小时（含）以内至起飞前收取20%，起飞后收取50%；",
+                    "RuleRemarks": "旅客可免费携带一件重量不超过10公斤、尺寸不超过40CM×30CM×20CM的非托运行李。无免费餐饮服务。航班延误或取消，不提供经济补偿。^^",
+                    "RuleRemarks_En": "First piece of carry-on baggage is free, maximum weight 10 kg, each piece limited to 20 x 30 x 40 cm in size. Checked baggage requires an additional charge. Meals not included. Compensation not provided in the event of flight cancelation or delay.",
+                    "RuleNote_En": "Conditional refund."
+                },
+                "TicketType": "NA"
+            },
+            {
+                "TravelerCategory": "Child",
+                "CanUpgrade": false,
+                "Index": 45,
+                "ChangeRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时（含）外需收取票面价5%的更改费，2小时内需收取票面价10%的变更费，起飞后需收取票面价30%的变更费。改期费与升舱费同时发生时，需同时收取，低于50元时按50元收。（婴儿免收）",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。旅客享有20KG免费托运行李。婴儿无免费行李额^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours. 20kg free baggage allowance. No free baggage allowance for infants.^",
+                    "RuleNote_En": "5% of fare charged if change at least 2 hours before departure, 10% of fare charged if change 2 hours within departure; 30% of fare charged if change after departure. Both date change fee and price difference charged when date change and upgrade occurred together (minimum CNY50 charge)."
+                },
+                "RefundFeeFormulaID": "260",
+                "IsPackageProduct": "false",
+                "FeeInfoList": [
+                    {
+                        "FeeType": "TAX",
+                        "Fee": 0
+                    },
+                    {
+                        "FeeType": "FUELSURCHARGE",
+                        "Fee": 0
+                    }
+                ],
+                "EndorseRule": {
+                    "RuleRestriction": "T",
+                    "RuleNote": "不得签转。",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。旅客享有20KG免费托运行李。婴儿无免费行李额^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours. 20kg free baggage allowance. No free baggage allowance for infants.^",
+                    "RuleNote_En": "No endorsement."
+                },
+                "RefundRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时（含）以外需收取票面价10％的退票费，2小时内需收取票面价20％的退票费，起飞后需收取票面价50％的退票费。退票费低于50元时按50元收取。（婴儿免收退票费）。",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。旅客享有20KG免费托运行李。婴儿无免费行李额^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours. 20kg free baggage allowance. No free baggage allowance for infants.^",
+                    "RuleNote_En": "10% of fare charged if refund at least 2 hours before departure, 20% of fare charged if refund 2 hours within departure; 50% of fare charged if refund after departure (minimum CNY50 charge)(free refund for infants)."
+                },
+                "TicketType": "NA"
+            },
+            {
+                "TravelerCategory": "Adult",
+                "CanUpgrade": false,
+                "Index": 46,
+                "ChangeRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时（含）外需收取票面价5%的更改费，2小时内需收取票面价10%的变更费，起飞后需收取票面价30%的变更费。改期费与升舱费同时发生时，需同时收取，低于50元时按50元收。（婴儿免收）",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours.^",
+                    "RuleNote_En": "5% of fare charged if change at least 2 hours before departure, 10% of fare charged if change 2 hours within departure; 30% of fare charged if change after departure. Both date change fee and price difference charged when date change and upgrade occurred together (minimum CNY50 charge)."
+                },
+                "RefundFeeFormulaID": "260",
+                "IsPackageProduct": "false",
+                "FeeInfoList": [
+                    {
+                        "FeeType": "TAX",
+                        "Fee": 50
+                    },
+                    {
+                        "FeeType": "FUELSURCHARGE",
+                        "Fee": 0
+                    }
+                ],
+                "EndorseRule": {
+                    "RuleRestriction": "T",
+                    "RuleNote": "不得签转。",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours.^",
+                    "RuleNote_En": "No endorsement."
+                },
+                "RefundRule": {
+                    "RuleRestriction": "H",
+                    "RuleNote": "起飞前2小时（含）以外需收取票面价10％的退票费，2小时内需收取票面价20％的退票费，起飞后需收取票面价50％的退票费。退票费低于50元时按50元收取。（婴儿免收退票费）。",
+                    "RuleRemarks": "无免费餐饮及选座服务。航班延误或取消，不提供经济补偿。航班取消、延误三小时以上可按非自愿退票办理。^",
+                    "RuleRemarks_En": "\"No free meal or seat selection service. No compensation for flight cancellation or delay. Receive involuntary refund if flight cancels or delays over 3 hours.^",
+                    "RuleNote_En": "10% of fare charged if refund at least 2 hours before departure, 20% of fare charged if refund 2 hours within departure; 50% of fare charged if refund after departure (minimum CNY50 charge)(free refund for infants)."
+                },
+                "TicketType": "NA"
+            }
+        ],
+        "FlightListGroupList": [
+            {
+                "FlightInfoList": [
+                    {
+                        "DeptAirportCode": "PVG",
+                        "StandardPriceList": [
+                            {
+                                "Price": 1240,
+                                "CabinClass": "经济舱"
+                            }
+                        ],
+                        "IsFlyMan": false,
+                        "ArrvCityCode": "BJS",
+                        "DeptCityName": "上海",
+                        "PunctualityRateDetail": {
+                            "DelayOver90": 0,
+                            "Cancel": 0,
+                            "OnTime": 71.92,
+                            "Delay30To60": 0,
+                            "Delay60To90": 0
+                        },
+                        "DeptDateTime": "2016-11-01 19:20:00",
+                        "DeptAirportName": "浦东",
+                        "NextDays": 0
+                    },
+                    {
+                        "DeptAirportCode": "PVG",
+                        "StandardPriceList": [
+                            {
+                                "Price": 1240,
+                                "CabinClass": "经济舱"
+                            }
+                        ],
+                        "IsFlyMan": false,
+                        "ArrvCityCode": "BJS",
+                        "DeptCityName": "上海",
+                        "PunctualityRateDetail": {
+                            "DelayOver90": 0,
+                            "Cancel": 0,
+                            "OnTime": 71.92,
+                            "Delay30To60": 0,
+                            "Delay60To90": 0
+                        },
+                        "DeptDateTime": "2016-11-01 19:20:00",
+                        "DeptAirportName": "浦东",
+                        "NextDays": 0
+                    }
+                ],
+                "OrigDestSeqID": 1
+            }
+        ],
+        "IsCompleted": true
+    }
+}
