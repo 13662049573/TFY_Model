@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.description = "版本控制数据"
     s.homepage = "https://github.com/13662049573/TFY_Model"
     s.license = "MIT"
-    s.author = {"tianfengyou" => "420144542@qq.com"}
+    s.author = { "tianfengyou" => "420144542@qq.com" }
     s.platform = :ios,'10.0'
     s.source = { :git => "https://github.com/13662049573/TFY_Model.git", :tag => 'v0.0.1'}
     s.source_files = "TFY_Model/TFY_ModelKit/*.{h,m}"
