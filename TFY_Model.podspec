@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.platform = :ios,'10.0'
     s.source = {:git=>'https://github.com/13662049573/TFY_Model.git',:tag => 'v0.0.1'}
     s.source_files = "TFY_ModelKit/*.{h,m}"
-    s.source_files = "UINavigationController/*.{h,m}"
+    # s.source_files = "UINavigationController/*.{h,m}"
     s.requires_arc = true
     s.frameworks = "UIKit"
     s.ios.deployment_target = '6.0'
