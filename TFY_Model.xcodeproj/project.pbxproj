@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3623710522767CC3005AC5D1 /* TFY_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710122767CC3005AC5D1 /* TFY_NavigationController.m */; };
+		3623710622767CC3005AC5D1 /* UIViewController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710222767CC3005AC5D1 /* UIViewController+TFY_Extension.m */; };
+		3623710722767CC3005AC5D1 /* UINavigationController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710422767CC3005AC5D1 /* UINavigationController+TFY_Extension.m */; };
 		3623A0202275348B00BEE18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3623A01F2275348B00BEE18F /* Assets.xcassets */; };
 		3623A0262275348B00BEE18F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A0252275348B00BEE18F /* main.m */; };
 		3623A0302275348B00BEE18F /* TFY_ModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A02F2275348B00BEE18F /* TFY_ModelTests.m */; };
 		3623A03B2275348B00BEE18F /* TFY_ModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A03A2275348B00BEE18F /* TFY_ModelUITests.m */; };
 		3623A04F2275351600BEE18F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A04A2275351600BEE18F /* AppDelegate.m */; };
 		3623A0532275354D00BEE18F /* NSObject+TFY_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A0512275354D00BEE18F /* NSObject+TFY_Model.m */; };
-		3623A05F2275369000BEE18F /* TFY_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A05C2275368F00BEE18F /* TFY_NavigationController.m */; };
-		3623A0602275369000BEE18F /* UINavigationController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A05E2275368F00BEE18F /* UINavigationController+TFY_Extension.m */; };
-		3623A0632275373000BEE18F /* UIViewController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A0622275373000BEE18F /* UIViewController+TFY_Extension.m */; };
 		3623A0682275388400BEE18F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A0652275388400BEE18F /* ViewController.m */; };
 		3623A06A227538A500BEE18F /* TFY_ModelObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 3623A069227538A500BEE18F /* TFY_ModelObject.json */; };
 		3623A06D227538E300BEE18F /* TFY_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A06C227538E300BEE18F /* TFY_Model.m */; };
@@ -39,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		362370FE22767CC3005AC5D1 /* UIViewController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TFY_Extension.h"; sourceTree = "<group>"; };
+		362370FF22767CC3005AC5D1 /* TFY_Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_Navigation.h; sourceTree = "<group>"; };
+		3623710022767CC3005AC5D1 /* UINavigationController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TFY_Extension.h"; sourceTree = "<group>"; };
+		3623710122767CC3005AC5D1 /* TFY_NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_NavigationController.m; sourceTree = "<group>"; };
+		3623710222767CC3005AC5D1 /* UIViewController+TFY_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TFY_Extension.m"; sourceTree = "<group>"; };
+		3623710322767CC3005AC5D1 /* TFY_NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_NavigationController.h; sourceTree = "<group>"; };
+		3623710422767CC3005AC5D1 /* UINavigationController+TFY_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TFY_Extension.m"; sourceTree = "<group>"; };
 		3623A0132275348A00BEE18F /* TFY_Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFY_Model.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3623A01F2275348B00BEE18F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3623A0242275348B00BEE18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,12 +61,6 @@
 		3623A0512275354D00BEE18F /* NSObject+TFY_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TFY_Model.m"; sourceTree = "<group>"; };
 		3623A0522275354D00BEE18F /* NSObject+TFY_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TFY_Model.h"; sourceTree = "<group>"; };
 		3623A059227535E400BEE18F /* TFY_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_PrefixHeader.pch; sourceTree = "<group>"; };
-		3623A05B2275368F00BEE18F /* UINavigationController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TFY_Extension.h"; sourceTree = "<group>"; };
-		3623A05C2275368F00BEE18F /* TFY_NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_NavigationController.m; sourceTree = "<group>"; };
-		3623A05D2275368F00BEE18F /* TFY_NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_NavigationController.h; sourceTree = "<group>"; };
-		3623A05E2275368F00BEE18F /* UINavigationController+TFY_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+TFY_Extension.m"; sourceTree = "<group>"; };
-		3623A0612275373000BEE18F /* UIViewController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TFY_Extension.h"; sourceTree = "<group>"; };
-		3623A0622275373000BEE18F /* UIViewController+TFY_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TFY_Extension.m"; sourceTree = "<group>"; };
 		3623A0652275388400BEE18F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3623A0662275388400BEE18F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3623A069227538A500BEE18F /* TFY_ModelObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TFY_ModelObject.json; sourceTree = "<group>"; };
@@ -92,6 +93,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		362370FD22767CC3005AC5D1 /* UINavigationKit */ = {
+			isa = PBXGroup;
+			children = (
+				362370FF22767CC3005AC5D1 /* TFY_Navigation.h */,
+				3623710322767CC3005AC5D1 /* TFY_NavigationController.h */,
+				3623710122767CC3005AC5D1 /* TFY_NavigationController.m */,
+				3623710222767CC3005AC5D1 /* UIViewController+TFY_Extension.m */,
+				362370FE22767CC3005AC5D1 /* UIViewController+TFY_Extension.h */,
+				3623710022767CC3005AC5D1 /* UINavigationController+TFY_Extension.h */,
+				3623710422767CC3005AC5D1 /* UINavigationController+TFY_Extension.m */,
+			);
+			path = UINavigationKit;
+			sourceTree = "<group>";
+		};
 		3623A00A2275348A00BEE18F = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +130,7 @@
 		3623A0152275348A00BEE18F /* TFY_Model */ = {
 			isa = PBXGroup;
 			children = (
-				3623A05A2275368F00BEE18F /* UINavigationController */,
+				362370FD22767CC3005AC5D1 /* UINavigationKit */,
 				3623A055227535C200BEE18F /* PCH */,
 				3623A0482275351600BEE18F /* AppDelegate */,
 				3623A04B2275351600BEE18F /* Controller */,
@@ -178,19 +193,6 @@
 				3623A059227535E400BEE18F /* TFY_PrefixHeader.pch */,
 			);
 			path = PCH;
-			sourceTree = "<group>";
-		};
-		3623A05A2275368F00BEE18F /* UINavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				3623A05D2275368F00BEE18F /* TFY_NavigationController.h */,
-				3623A05C2275368F00BEE18F /* TFY_NavigationController.m */,
-				3623A0612275373000BEE18F /* UIViewController+TFY_Extension.h */,
-				3623A0622275373000BEE18F /* UIViewController+TFY_Extension.m */,
-				3623A05B2275368F00BEE18F /* UINavigationController+TFY_Extension.h */,
-				3623A05E2275368F00BEE18F /* UINavigationController+TFY_Extension.m */,
-			);
-			path = UINavigationController;
 			sourceTree = "<group>";
 		};
 		3623A0642275388400BEE18F /* VC */ = {
@@ -341,14 +343,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3623710622767CC3005AC5D1 /* UIViewController+TFY_Extension.m in Sources */,
 				3623A0682275388400BEE18F /* ViewController.m in Sources */,
 				3623A06D227538E300BEE18F /* TFY_Model.m in Sources */,
-				3623A0632275373000BEE18F /* UIViewController+TFY_Extension.m in Sources */,
 				3623A0532275354D00BEE18F /* NSObject+TFY_Model.m in Sources */,
 				3623A04F2275351600BEE18F /* AppDelegate.m in Sources */,
-				3623A0602275369000BEE18F /* UINavigationController+TFY_Extension.m in Sources */,
-				3623A05F2275369000BEE18F /* TFY_NavigationController.m in Sources */,
+				3623710722767CC3005AC5D1 /* UINavigationController+TFY_Extension.m in Sources */,
 				3623A0262275348B00BEE18F /* main.m in Sources */,
+				3623710522767CC3005AC5D1 /* TFY_NavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

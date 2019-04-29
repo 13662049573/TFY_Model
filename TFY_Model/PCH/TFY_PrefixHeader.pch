@@ -10,8 +10,6 @@
 #define TFY_PrefixHeader_pch
 
 #import "NSObject+TFY_Model.h"
-#import "TFY_NavigationController.h"
-#import "UINavigationController+TFY_Extension.h"
-#import "UIViewController+TFY_Extension.h"
+#import "TFY_Navigation.h"
 
 #endif /* TFY_PrefixHeader_pch */
