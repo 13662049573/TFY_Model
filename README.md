@@ -1,7 +1,31 @@
 # TFY_Model
 
 
-使用方法
+使用方法  pod 'TFY_Model' 
+
+
+TFY_Model * model = [TFY_Model tfy_ModelWithJson:jsonData];
+    NSLog(@"解析jsonData model = %@\n\n",model);
+    
+    /************** json -> modelObject **************/
+    model = [TFY_Model tfy_ModelWithJson:jsonString];
+    NSLog(@"json -> modelObject model = %@\n\n\n",model);
+    
+    /************** modelObject -> json **************/
+    NSString * modelString = [model tfy_Json];
+    NSLog(@"modelObject -> json modelString = %@\n\n\n",modelString);
+    
+    /************** modelObject - > NSDictionary **************/
+    NSDictionary * modelDict = [model tfy_Dictionary];
+    NSLog(@"modelObject - > NSDictionary modelDict = %@\n\n\n",modelDict);
+    
+    /************** 指定路径只解析Head对象 **************/
+    Head * head = [Head tfy_ModelWithJson:jsonString keyPath:@"Head"];
+    NSLog(@"指定路径只解析Head对象 head = %@\n\n\n",head);
+    
+    /************** 指定路径只解析ResponseBody对象 **************/
+    ResponseBody * body = [ResponseBody tfy_ModelWithJson:jsonString keyPath:@"ResponseBody"];
+    NSLog(@"指定路径只解析ResponseBody对象 ResponseBody = %@\n\n\n",body);
 
 @interface Head :NSObject
 @property (nonatomic , copy) NSString              * responseTime;
@@ -60,68 +84,6 @@
 
 @end
 
-@interface PunctualityRateDetail :NSObject
-@property (nonatomic , assign) NSInteger              cancel;
-@property (nonatomic , assign) NSInteger              delay60To90;
-@property (nonatomic , assign) CGFloat              onTime;
-@property (nonatomic , assign) NSInteger              delay30To60;
-@property (nonatomic , assign) NSInteger              delayOver90;
-
-@end
-
-@interface StandardPriceList :NSObject
-@property (nonatomic , assign) NSInteger              price;
-@property (nonatomic , copy) NSString              * cabinClass;
-
-@end
-
-@interface FlightInfoList :NSObject
-@property (nonatomic , copy) NSString              * arrvCityCode;
-@property (nonatomic , strong) PunctualityRateDetail              * punctualityRateDetail;
-@property (nonatomic , copy) NSString              * deptAirportName;
-@property (nonatomic , copy) NSString              * deptAirportCode;
-@property (nonatomic , copy) NSString              * deptCityName;
-@property (nonatomic , copy) NSString              * deptDateTime;
-@property (nonatomic , assign) NSInteger              nextDays;
-@property (nonatomic , assign) BOOL              isFlyMan;
-@property (nonatomic , copy) NSArray<StandardPriceList *>              * standardPriceList;
-
-@end
-
-@interface FlightListGroupList :NSObject
-@property (nonatomic , copy) NSArray<FlightInfoList *>              * flightInfoList;
-@property (nonatomic , assign) NSInteger              origDestSeqID;
-
-@end
-
-@interface ResponseBody :NSObject
-@property (nonatomic , copy) NSArray<PolicyRuleList *>              * policyRuleList;
-@property (nonatomic , copy) NSArray<FlightListGroupList *>              * flightListGroupList;
-@property (nonatomic , assign) BOOL              isCompleted;
-
-@end
-
-@interface TFY_Model :NSObject
-@property (nonatomic , strong) Head              * head;
-@property (nonatomic , strong) ResponseBody              * responseBody;
-
-@end
-
-@implementation Head
-
-@end
-@implementation ChangeRule
-
-@end
-@implementation FeeInfoList
-
-@end
-@implementation EndorseRule
-
-@end
-@implementation RefundRule
-
-@end
 @implementation PolicyRuleList
 +(NSDictionary <NSString *, Class> *)tfy_ModelReplacePropertyClassMapper{
     return @{@"changeRule":[ChangeRule class],
@@ -168,25 +130,3 @@
 
 
 
-TFY_Model * model = [TFY_Model tfy_ModelWithJson:jsonData];
-    NSLog(@"解析jsonData model = %@\n\n",model);
-    
-    /************** json -> modelObject **************/
-    model = [TFY_Model tfy_ModelWithJson:jsonString];
-    NSLog(@"json -> modelObject model = %@\n\n\n",model);
-    
-    /************** modelObject -> json **************/
-    NSString * modelString = [model tfy_Json];
-    NSLog(@"modelObject -> json modelString = %@\n\n\n",modelString);
-    
-    /************** modelObject - > NSDictionary **************/
-    NSDictionary * modelDict = [model tfy_Dictionary];
-    NSLog(@"modelObject - > NSDictionary modelDict = %@\n\n\n",modelDict);
-    
-    /************** 指定路径只解析Head对象 **************/
-    Head * head = [Head tfy_ModelWithJson:jsonString keyPath:@"Head"];
-    NSLog(@"指定路径只解析Head对象 head = %@\n\n\n",head);
-    
-    /************** 指定路径只解析ResponseBody对象 **************/
-    ResponseBody * body = [ResponseBody tfy_ModelWithJson:jsonString keyPath:@"ResponseBody"];
-    NSLog(@"指定路径只解析ResponseBody对象 ResponseBody = %@\n\n\n",body);
