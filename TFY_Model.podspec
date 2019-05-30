@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/13662049573/TFY_Model.git", :tag => spec.version }
 
 
-  spec.source_files  = "TFY_Model/TFY_ModelKit/*.{h,m}"
+  spec.source_files  = "TFY_Model/TFY_ModelKit/*.{h,m}","TFY_Model/TFY_ModelKit/TFY_ModelSqliteHeader.h"
   
   spec.exclude_files = "TFY_Model/TFY_ModelKit/TFY_ModelSqlite.m"
 
