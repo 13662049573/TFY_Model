@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3620AD96229FB9A200AB5C48 /* TFY_ModelSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3620AD95229FB9A200AB5C48 /* TFY_ModelSqlite.m */; };
 		3620AD99229FC6EA00AB5C48 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD98229FC6EA00AB5C48 /* libsqlite3.0.tbd */; };
+		3620AD9C229FCEEF00AB5C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD9B229FCEEF00AB5C48 /* UIKit.framework */; };
+		3620AD9E229FCF1600AB5C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD9D229FCF1600AB5C48 /* Foundation.framework */; };
 		3623710522767CC3005AC5D1 /* TFY_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710122767CC3005AC5D1 /* TFY_NavigationController.m */; };
 		3623710622767CC3005AC5D1 /* UIViewController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710222767CC3005AC5D1 /* UIViewController+TFY_Extension.m */; };
 		3623710722767CC3005AC5D1 /* UINavigationController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710422767CC3005AC5D1 /* UINavigationController+TFY_Extension.m */; };
@@ -45,6 +47,8 @@
 		3620AD95229FB9A200AB5C48 /* TFY_ModelSqlite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_ModelSqlite.m; sourceTree = "<group>"; };
 		3620AD98229FC6EA00AB5C48 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3620AD9A229FC72F00AB5C48 /* TFY_ModelSqliteHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ModelSqliteHeader.h; sourceTree = "<group>"; };
+		3620AD9B229FCEEF00AB5C48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3620AD9D229FCF1600AB5C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		362370FE22767CC3005AC5D1 /* UIViewController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TFY_Extension.h"; sourceTree = "<group>"; };
 		362370FF22767CC3005AC5D1 /* TFY_Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_Navigation.h; sourceTree = "<group>"; };
 		3623710022767CC3005AC5D1 /* UINavigationController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TFY_Extension.h"; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3620AD9E229FCF1600AB5C48 /* Foundation.framework in Frameworks */,
+				3620AD9C229FCEEF00AB5C48 /* UIKit.framework in Frameworks */,
 				3620AD99229FC6EA00AB5C48 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +109,8 @@
 		3620AD97229FC6EA00AB5C48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3620AD9D229FCF1600AB5C48 /* Foundation.framework */,
+				3620AD9B229FCEEF00AB5C48 /* UIKit.framework */,
 				3620AD98229FC6EA00AB5C48 /* libsqlite3.0.tbd */,
 			);
 			name = Frameworks;
