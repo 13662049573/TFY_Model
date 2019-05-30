@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_Model"
 
-  spec.version      = "2.5.3"
+  spec.version      = "2.5.8"
 
   spec.summary      = "模型数据解析"
 
@@ -24,8 +24,6 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "TFY_Model/TFY_ModelKit/*.{h,m}","TFY_Model/TFY_ModelKit/TFY_ModelSqliteHeader.h"
   
-  spec.exclude_files = "TFY_Model/TFY_ModelKit/TFY_ModelSqlite.m"
-
   spec.frameworks    = "Foundation","UIKit"
 
   spec.xcconfig      = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC -DHAVE_USLEEP=1' }
