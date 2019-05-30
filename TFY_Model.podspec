@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
 
   spec.frameworks    = "Foundation","UIKit"
 
-  spec.xcconfig      = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include" },{ 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC -DHAVE_USLEEP=1' }
+  spec.xcconfig      = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC -DHAVE_USLEEP=1' }
 
   spec.dependency     "SQLCipher"
 
