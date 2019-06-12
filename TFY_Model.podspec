@@ -4,11 +4,11 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_Model"
 
-  spec.version      = "2.5.8"
+  spec.version      = "2.6.0"
 
-  spec.summary      = "模型数据解析"
+  spec.summary      = "模型数据解析，数据库添加。"
 
-  spec.description  = "json解析数据"
+  spec.description  = "json解析数据,数据库添加。"
 
   spec.homepage     = "https://github.com/13662049573/TFY_Model"
 
