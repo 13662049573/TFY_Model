@@ -30,7 +30,7 @@ static const NSString * TFY_MutableArray      = @"BLOB";
 static const NSString * TFY_MutableDictionary = @"BLOB";
 static const NSString * TFY_Date              = @"DOUBLE";
 
-typedef enum : NSUInteger {
+typedef NS_OPTIONS(NSUInteger, TFY_FieldType) {
     _String,
     _Int,
     _Boolean,
@@ -44,9 +44,9 @@ typedef enum : NSUInteger {
     _Dictionary,
     _MutableArray,
     _MutableDictionary,
-} TFY_FieldType;
+};
 
-typedef enum : NSUInteger {
+typedef NS_OPTIONS(NSUInteger, TFY_QueryType) {
     _Where,
     _Order,
     _Limit,
@@ -54,7 +54,7 @@ typedef enum : NSUInteger {
     _WhereLimit,
     _OrderLimit,
     _WhereOrderLimit
-} TFY_QueryType;
+};
 
 
 static sqlite3 * _tfy_database;
@@ -69,11 +69,8 @@ static sqlite3 * _tfy_database;
 
 @implementation TFY_PropertyInfo
 
-- (TFY_PropertyInfo *)initWithType:(TFY_FieldType)type
-                      propertyName:(NSString *)property_name
-                              name:(NSString *)name {
-    self = [super init];
-    if (self) {
+- (TFY_PropertyInfo *)initWithType:(TFY_FieldType)type propertyName:(NSString *)property_name name:(NSString *)name{
+    if (self = [super init]) {
         _name = name.mutableCopy;
         _type = type;
         if (property_name.length > 1) {
@@ -96,8 +93,7 @@ static sqlite3 * _tfy_database;
 @implementation TFY_ModelSqlite
 
 - (TFY_ModelSqlite *)init {
-    self = [super init];
-    if (self) {
+    if (self = [super init]) {
         self.dsema = dispatch_semaphore_create(1);
         self.check_update = YES;
     }
@@ -389,9 +385,7 @@ static sqlite3 * _tfy_database;
     return field_name_array;
 }
 
-+ (void)updateTableFieldWithModel:(Class)model_class
-                       newVersion:(NSString *)newVersion
-                   localModelName:(NSString *)local_model_name {
++ (void)updateTableFieldWithModel:(Class)model_class newVersion:(NSString *)newVersion localModelName:(NSString *)local_model_name {
     @autoreleasepool {
         NSString * table_name = [self getTableName:model_class];
         NSString * cache_directory = [self databaseCacheDirectory: model_class];
@@ -626,9 +620,7 @@ static sqlite3 * _tfy_database;
             NSString * local_model_name = [self localNameWithModel:model_class];
             if (local_model_name != nil &&
                 [local_model_name rangeOfString:version].location == NSNotFound) {
-                [self updateTableFieldWithModel:model_class
-                                     newVersion:version
-                                 localModelName:local_model_name];
+                [self updateTableFieldWithModel:model_class newVersion:version localModelName:local_model_name];
             }
         }
         [self shareInstance].check_update = YES;

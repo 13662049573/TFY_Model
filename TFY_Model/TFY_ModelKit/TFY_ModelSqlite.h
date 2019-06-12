@@ -74,7 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSArray *)query:(Class)model_class limit:(NSString *)limit;
 /**
- *  [TFY_ModelSqlite query:[Person class] where:@"age < 30" order:@"by age desc/asc"]; 数据表查询age小于30岁并且根据age自动降序或者升序排序数据表查询age小于30岁并且根据age自动降序或者升序排序 where 查询条件(查询语法和SQL where 查询语法一样，where为空则查询所有) order 排序条件(排序语法和SQL order 查询语法一样，order为空则不排序)
+ *  [TFY_ModelSqlite query:[Person class] where:@"age < 30" order:@"by age desc/asc"]; 
  */
 + (NSArray *)query:(Class)model_class where:(NSString *)where order:(NSString *)order;
 /**
