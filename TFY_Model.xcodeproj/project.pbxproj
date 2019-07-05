@@ -23,6 +23,7 @@
 		3623A0682275388400BEE18F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A0652275388400BEE18F /* ViewController.m */; };
 		3623A06A227538A500BEE18F /* TFY_ModelObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 3623A069227538A500BEE18F /* TFY_ModelObject.json */; };
 		3623A06D227538E300BEE18F /* TFY_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623A06C227538E300BEE18F /* TFY_Model.m */; };
+		365AD9C822CF175A005F95DA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 365AD9C722CF175A005F95DA /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		3623A069227538A500BEE18F /* TFY_ModelObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TFY_ModelObject.json; sourceTree = "<group>"; };
 		3623A06B227538E300BEE18F /* TFY_Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_Model.h; sourceTree = "<group>"; };
 		3623A06C227538E300BEE18F /* TFY_Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_Model.m; sourceTree = "<group>"; };
+		365AD9C722CF175A005F95DA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365AD9C822CF175A005F95DA /* libsqlite3.tbd in Frameworks */,
 				3620AD9E229FCF1600AB5C48 /* Foundation.framework in Frameworks */,
 				3620AD9C229FCEEF00AB5C48 /* UIKit.framework in Frameworks */,
 				3620AD99229FC6EA00AB5C48 /* libsqlite3.0.tbd in Frameworks */,
@@ -109,6 +112,7 @@
 		3620AD97229FC6EA00AB5C48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				365AD9C722CF175A005F95DA /* libsqlite3.tbd */,
 				3620AD9D229FCF1600AB5C48 /* Foundation.framework */,
 				3620AD9B229FCEEF00AB5C48 /* UIKit.framework */,
 				3620AD98229FC6EA00AB5C48 /* libsqlite3.0.tbd */,

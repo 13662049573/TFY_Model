@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_Model"
 
-  spec.version      = "2.6.0"
+  spec.version      = "2.6.2"
 
   spec.summary      = "模型数据解析，数据库添加。"
 
@@ -26,9 +26,7 @@ Pod::Spec.new do |spec|
   
   spec.frameworks    = "Foundation","UIKit"
 
-  spec.xcconfig      = { 'OTHER_CFLAGS' => '$(inherited) -DSQLITE_HAS_CODEC -DHAVE_USLEEP=1' }
-
-  spec.dependency     "SQLCipher"
+  spec.xcconfig      = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include" }
 
   spec.library        = "sqlite3"
 
