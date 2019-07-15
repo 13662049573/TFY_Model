@@ -31,48 +31,41 @@
     model = [TFY_Model tfy_ModelWithJson:jsonString];
     NSLog(@"json -> modelObject model = %@\n\n\n",model);
     
-    /************** modelObject -> json **************/
-    NSString * modelString = [model tfy_Json];
-    NSLog(@"modelObject -> json modelString = %@\n\n\n",modelString);
-    
-    /************** modelObject - > NSDictionary **************/
-    NSDictionary * modelDict = [model tfy_Dictionary];
-    NSLog(@"modelObject - > NSDictionary modelDict = %@\n\n\n",modelDict);
-    
-    /************** 指定路径只解析Head对象 **************/
-    Head * head = [Head tfy_ModelWithJson:jsonString keyPath:@"Head"];
-    NSLog(@"指定路径只解析Head对象 head = %@\n\n\n",head);
-    
-    /************** 指定路径只解析ResponseBody对象 **************/
-    ResponseBody * body = [ResponseBody tfy_ModelWithJson:jsonString keyPath:@"ResponseBody"];
-    NSLog(@"指定路径只解析ResponseBody对象 ResponseBody = %@\n\n\n",body);
-    EndorseRule *hh = [EndorseRule new];
-    hh.ruleNote = @"你好";
-    hh.ruleNote_En = @"这是一个测试数据";
-    hh.ruleRemarks = @"参数变";
-    hh.ruleRemarks_En = @"中文数据";
-    hh.ruleRestriction = @"奥会计师咖啡连锁店白费力气播放器分离器吧";
+//    /************** modelObject - > NSDictionary **************/
+//    NSDictionary * modelDict = [model tfy_Dictionary];
+//    NSLog(@"modelObject - > NSDictionary modelDict = %@\n\n\n",modelDict);
+//    
+//    /************** 指定路径只解析Head对象 **************/
+//    Head * head = [Head tfy_ModelWithJson:jsonString keyPath:@"Head"];
+//    NSLog(@"指定路径只解析Head对象 head = %@\n\n\n",head);
+//    
+//    /************** 指定路径只解析ResponseBody对象 **************/
+//    ResponseBody * body = [ResponseBody tfy_ModelWithJson:jsonString keyPath:@"ResponseBody"];
+//    NSLog(@"指定路径只解析ResponseBody对象 ResponseBody = %@\n\n\n",body);
+//    EndorseRule *hh = [EndorseRule new];
+//    hh.ruleNote = @"你好";
+//    hh.ruleNote_En = @"这是一个测试数据";
+//    hh.ruleRemarks = @"参数变";
+//    hh.ruleRemarks_En = @"中文数据";
+//    hh.ruleRestriction = @"奥会计师咖啡连锁店白费力气播放器分离器吧";
     
     
-    [TFY_ModelSqlite removeAllModel];
+//    [TFY_ModelSqlite removeAllModel];
     
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
-        [TFY_ModelSqlite insert:hh];
-        NSLog(@"线程1.存储单个模型对象到数据库演示代码");
-    });
     
-    NSArray *person = [TFY_ModelSqlite query:[EndorseRule class]];
+//    NSArray *person = [TFY_ModelSqlite query:[EndorseRule class]];
+//    
+//    [person enumerateObjectsUsingBlock:^(EndorseRule  *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        
+//         NSLog(@"TFY_ModelSqlite model = %@\n\n",obj.ruleRemarks);
+//    }];
     
-    [person enumerateObjectsUsingBlock:^(EndorseRule  *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-         NSLog(@"TFY_ModelSqlite model = %@\n\n",obj.ruleRemarks);
-    }];
+//    NSArray * persons = [self makeArrayPerson];
+//    [TFY_ModelSqlite inserts:persons];
+    [TFY_ModelSqlite insert:model];
+    NSLog(@"线程1.存储单个模型对象到数据库演示代码");
     
-    NSArray * persons = [self makeArrayPerson];
-    [TFY_ModelSqlite inserts:persons];
-    
-    NSString * path = [TFY_ModelSqlite localPathWithModel:[EndorseRule class]];
+    NSString * path = [TFY_ModelSqlite localPathWithModel:[TFY_Model class]];
     NSLog(@"localPath = %@",path);
 }
 

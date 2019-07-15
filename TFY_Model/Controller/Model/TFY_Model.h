@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Head :NSObject
+@interface Head :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSString              * responseTime;
 @property (nonatomic , copy) NSString              * receiveTime;
 @property (nonatomic , copy) NSString              * resultMsg;
@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ChangeRule :NSObject
+@interface ChangeRule :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSString              * ruleRestriction;
 @property (nonatomic , copy) NSString              * ruleNote;
 @property (nonatomic , copy) NSString              * ruleRemarks;
@@ -29,13 +29,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface FeeInfoList :NSObject
+@interface FeeInfoList :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSString              * feeType;
 @property (nonatomic , assign) NSInteger              fee;
 
 @end
 
-@interface EndorseRule :NSObject
+@interface EndorseRule :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSString              * ruleRestriction;
 @property (nonatomic , copy) NSString              * ruleNote;
 @property (nonatomic , copy) NSString              * ruleRemarks;
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface RefundRule :NSObject
+@interface RefundRule :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSString              * ruleRestriction;
 @property (nonatomic , copy) NSString              * ruleNote;
 @property (nonatomic , copy) NSString              * ruleRemarks;
@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface PolicyRuleList :NSObject
+@interface PolicyRuleList :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSString              * travelerCategory;
 @property (nonatomic , assign) BOOL              canUpgrade;
 @property (nonatomic , assign) NSInteger              index;
@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface PunctualityRateDetail :NSObject
+@interface PunctualityRateDetail :NSObject<TFY_ModelSqlite>
 @property (nonatomic , assign) NSInteger              cancel;
 @property (nonatomic , assign) NSInteger              delay60To90;
 @property (nonatomic , assign) CGFloat              onTime;
@@ -76,13 +76,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface StandardPriceList :NSObject
+@interface StandardPriceList :NSObject<TFY_ModelSqlite>
 @property (nonatomic , assign) NSInteger              price;
 @property (nonatomic , copy) NSString              * cabinClass;
 
 @end
 
-@interface FlightInfoList :NSObject
+@interface FlightInfoList :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSString              * arrvCityCode;
 @property (nonatomic , strong) PunctualityRateDetail              * punctualityRateDetail;
 @property (nonatomic , copy) NSString              * deptAirportName;
@@ -95,20 +95,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface FlightListGroupList :NSObject
+@interface FlightListGroupList :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSArray<FlightInfoList *>              * flightInfoList;
 @property (nonatomic , assign) NSInteger              origDestSeqID;
 
 @end
 
-@interface ResponseBody :NSObject
+@interface ResponseBody :NSObject<TFY_ModelSqlite>
 @property (nonatomic , copy) NSArray<PolicyRuleList *>              * policyRuleList;
 @property (nonatomic , copy) NSArray<FlightListGroupList *>              * flightListGroupList;
 @property (nonatomic , assign) BOOL              isCompleted;
 
 @end
 
-@interface TFY_Model :NSObject
+@interface TFY_Model :NSObject<TFY_ModelSqlite>
 @property (nonatomic , strong) Head              * head;
 @property (nonatomic , strong) ResponseBody              * responseBody;
 
