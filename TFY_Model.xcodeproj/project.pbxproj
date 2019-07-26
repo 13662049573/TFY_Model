@@ -11,6 +11,9 @@
 		3620AD99229FC6EA00AB5C48 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD98229FC6EA00AB5C48 /* libsqlite3.0.tbd */; };
 		3620AD9C229FCEEF00AB5C48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD9B229FCEEF00AB5C48 /* UIKit.framework */; };
 		3620AD9E229FCF1600AB5C48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3620AD9D229FCF1600AB5C48 /* Foundation.framework */; };
+		36221EF722EAAB4C00F1480A /* normal_face.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36221EF522EAAB4C00F1480A /* normal_face.plist */; };
+		36221EF822EAAB4C00F1480A /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36221EF622EAAB4C00F1480A /* emoji.plist */; };
+		36221EFB22EAB77A00F1480A /* TFY_normal_faceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 36221EFA22EAB77A00F1480A /* TFY_normal_faceModel.m */; };
 		3623710522767CC3005AC5D1 /* TFY_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710122767CC3005AC5D1 /* TFY_NavigationController.m */; };
 		3623710622767CC3005AC5D1 /* UIViewController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710222767CC3005AC5D1 /* UIViewController+TFY_Extension.m */; };
 		3623710722767CC3005AC5D1 /* UINavigationController+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623710422767CC3005AC5D1 /* UINavigationController+TFY_Extension.m */; };
@@ -50,6 +53,10 @@
 		3620AD9A229FC72F00AB5C48 /* TFY_ModelSqliteHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ModelSqliteHeader.h; sourceTree = "<group>"; };
 		3620AD9B229FCEEF00AB5C48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3620AD9D229FCF1600AB5C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36221EF522EAAB4C00F1480A /* normal_face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = normal_face.plist; sourceTree = "<group>"; };
+		36221EF622EAAB4C00F1480A /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
+		36221EF922EAB77900F1480A /* TFY_normal_faceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_normal_faceModel.h; sourceTree = "<group>"; };
+		36221EFA22EAB77A00F1480A /* TFY_normal_faceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_normal_faceModel.m; sourceTree = "<group>"; };
 		362370FE22767CC3005AC5D1 /* UIViewController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TFY_Extension.h"; sourceTree = "<group>"; };
 		362370FF22767CC3005AC5D1 /* TFY_Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_Navigation.h; sourceTree = "<group>"; };
 		3623710022767CC3005AC5D1 /* UINavigationController+TFY_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+TFY_Extension.h"; sourceTree = "<group>"; };
@@ -238,9 +245,13 @@
 		3623A0672275388400BEE18F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				36221EF622EAAB4C00F1480A /* emoji.plist */,
+				36221EF522EAAB4C00F1480A /* normal_face.plist */,
 				3623A069227538A500BEE18F /* TFY_ModelObject.json */,
 				3623A06B227538E300BEE18F /* TFY_Model.h */,
 				3623A06C227538E300BEE18F /* TFY_Model.m */,
+				36221EF922EAB77900F1480A /* TFY_normal_faceModel.h */,
+				36221EFA22EAB77A00F1480A /* TFY_normal_faceModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3623A06A227538A500BEE18F /* TFY_ModelObject.json in Resources */,
+				36221EF822EAAB4C00F1480A /* emoji.plist in Resources */,
+				36221EF722EAAB4C00F1480A /* normal_face.plist in Resources */,
 				3623A0202275348B00BEE18F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +394,7 @@
 				3623A04F2275351600BEE18F /* AppDelegate.m in Sources */,
 				3623710722767CC3005AC5D1 /* UINavigationController+TFY_Extension.m in Sources */,
 				3620AD96229FB9A200AB5C48 /* TFY_ModelSqlite.m in Sources */,
+				36221EFB22EAB77A00F1480A /* TFY_normal_faceModel.m in Sources */,
 				3623A0262275348B00BEE18F /* main.m in Sources */,
 				3623710522767CC3005AC5D1 /* TFY_NavigationController.m in Sources */,
 			);
