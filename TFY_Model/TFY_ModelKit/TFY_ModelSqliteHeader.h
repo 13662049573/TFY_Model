@@ -4,17 +4,17 @@
 //
 //  Created by 田风有 on 2019/5/30.
 //  Copyright © 2019 恋机科技. All rights reserved.
-//  最新版本号: 2.7.0
+//  最新版本号: 2.7.2
 
 #import <Foundation/Foundation.h>
 
-#if __has_include(<TFY_ModelKit/TFY_ModelSqliteHeader.h>)
+#if __has_include(<TFY_Model/TFY_ModelSqliteHeader.h>)
 
 FOUNDATION_EXPORT double TFY_ModelVersionNumber;
 FOUNDATION_EXPORT const unsigned char TFY_ModelVersionString[];
 
-#import <TFY_ModelKit/NSObject+TFY_Model.h>
-#import <TFY_ModelKit/TFY_ModelSqlite.h>
+#import <TFY_Model/NSObject+TFY_Model.h>
+#import <TFY_Model/TFY_ModelSqlite.h>
 
 #else
 
