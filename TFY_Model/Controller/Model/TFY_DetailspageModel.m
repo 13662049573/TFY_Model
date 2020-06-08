@@ -12,7 +12,7 @@
 
 @implementation TFY_DetailspageModel
 
-+ (nullable NSDictionary<NSString *, id> *)tfy_modelContainerPropertyGenericClass{
++(NSDictionary <NSString *, Class> *)tfy_ModelReplaceContainerElementClassMapper{
      return @{@"Head" : TFY_HeadModel.class,
 @"ResponseBody" : TFY_ResponseBodyModel.class,
      };
@@ -31,7 +31,7 @@
 
 @implementation TFY_ResponseBodyModel
 
-+ (nullable NSDictionary<NSString *, id> *)tfy_modelContainerPropertyGenericClass{
++(NSDictionary <NSString *, Class> *)tfy_ModelReplaceContainerElementClassMapper{
      return @{@"FlightListGroupList" : TFY_FlightListGroupListModel.class,
 @"PolicyRuleList" : TFY_PolicyRuleListModel.class,
      };
@@ -43,7 +43,7 @@
 
 @implementation TFY_FlightListGroupListModel
 
-+ (nullable NSDictionary<NSString *, id> *)tfy_modelContainerPropertyGenericClass{
++(NSDictionary <NSString *, Class> *)tfy_ModelReplaceContainerElementClassMapper{
      return @{@"FlightInfoList" : TFY_FlightInfoListModel.class,
      };
 }
@@ -54,7 +54,7 @@
 
 @implementation TFY_FlightInfoListModel
 
-+ (nullable NSDictionary<NSString *, id> *)tfy_modelContainerPropertyGenericClass{
++(NSDictionary <NSString *, Class> *)tfy_ModelReplaceContainerElementClassMapper{
      return @{@"PunctualityRateDetail" : TFY_PunctualityRateDetailModel.class,
 @"StandardPriceList" : TFY_StandardPriceListModel.class,
      };
@@ -73,7 +73,7 @@
 
 @implementation TFY_PolicyRuleListModel
 
-+ (nullable NSDictionary<NSString *, id> *)tfy_modelContainerPropertyGenericClass{
++(NSDictionary <NSString *, Class> *)tfy_ModelReplaceContainerElementClassMapper{
      return @{@"ChangeRule" : TFY_ChangeRuleModel.class,
 @"FeeInfoList" : TFY_FeeInfoListModel.class,
 @"EndorseRule" : TFY_EndorseRuleModel.class,

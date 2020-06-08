@@ -45,14 +45,13 @@
     }];
     
     
-    NSArray *arr = [NSArray tfy_modelArrayWithClass:[TFY_normal_faceModel class] json:[NSObject tfy_pathForResource:@"normal_face.plist"]];
+    NSArray<TFY_normal_faceModel *> *arr = [TFY_normal_faceModel tfy_ModelobjectArrayWithFilename:@"normal_face.plist"];
     
-    [arr enumerateObjectsUsingBlock:^(TFY_normal_faceModel  *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-        NSLog(@"%@",obj.face_name);
+    [arr enumerateObjectsUsingBlock:^(TFY_normal_faceModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+       
+        NSLog(@"------%@-",obj.face_name);
     }];
-    
-    
+   
 }
 
 
