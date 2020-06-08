@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_Model"
 
-  spec.version      = "2.6.8"
+  spec.version      = "2.7.0"
 
   spec.summary      = "模型数据解析，数据库添加。"
 
