@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "TFY_Model"
 
-  spec.version      = "2.7.4"
+  spec.version      = "2.7.6"
 
   spec.summary      = "模型数据解析，数据库添加。"
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/13662049573/TFY_Model.git", :tag => spec.version }
 
 
-  spec.source_files  = "TFY_Model/TFY_ModelKit/*.{h,m}","TFY_Model/TFY_ModelKit/TFY_ModelSqliteHeader.h"
+  spec.source_files  = "TFY_Model/TFY_ModelKit/*.{h,m}","TFY_Model/TFY_ModelKit/TFY_ModelKit.h"
   
   spec.frameworks    = "Foundation","UIKit"
 
