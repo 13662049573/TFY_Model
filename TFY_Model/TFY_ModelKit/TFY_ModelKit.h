@@ -1,14 +1,14 @@
 //
-//  TFY_ModelSqliteHeader.h
+//  TFY_ModelKit.h
 //  TFY_Model
 //
-//  Created by 田风有 on 2019/5/30.
-//  Copyright © 2019 恋机科技. All rights reserved.
-//  最新版本号: 2.7.4
+//  Created by 田风有 on 2020/9/9.
+//  Copyright © 2020 恋机科技. All rights reserved.
+//  最新版本号: 2.7.6
 
 #import <Foundation/Foundation.h>
 
-#if __has_include(<TFY_Model/TFY_ModelSqliteHeader.h>)
+#if __has_include(<TFY_ModelKit/TFY_ModelKit.h>)
 
 FOUNDATION_EXPORT double TFY_ModelVersionNumber;
 FOUNDATION_EXPORT const unsigned char TFY_ModelVersionString[];

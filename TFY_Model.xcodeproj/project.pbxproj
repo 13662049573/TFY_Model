@@ -50,7 +50,6 @@
 		3620AD94229FB9A200AB5C48 /* TFY_ModelSqlite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ModelSqlite.h; sourceTree = "<group>"; };
 		3620AD95229FB9A200AB5C48 /* TFY_ModelSqlite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_ModelSqlite.m; sourceTree = "<group>"; };
 		3620AD98229FC6EA00AB5C48 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		3620AD9A229FC72F00AB5C48 /* TFY_ModelSqliteHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ModelSqliteHeader.h; sourceTree = "<group>"; };
 		3620AD9B229FCEEF00AB5C48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3620AD9D229FCF1600AB5C48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		36221EF522EAAB4C00F1480A /* normal_face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = normal_face.plist; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		3623A0652275388400BEE18F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3623A0662275388400BEE18F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3623A069227538A500BEE18F /* TFY_ModelObject.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TFY_ModelObject.json; sourceTree = "<group>"; };
+		3638B05A2508758000F71DC7 /* TFY_ModelKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ModelKit.h; sourceTree = "<group>"; };
 		365AD9C722CF175A005F95DA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		565A62B4248DE5A200A87CE5 /* TFY_DetailspageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFY_DetailspageModel.m; sourceTree = "<group>"; };
 		565A62B5248DE5A300A87CE5 /* TFY_DetailspageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFY_DetailspageModel.h; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		3623A04E2275351600BEE18F /* TFY_ModelKit */ = {
 			isa = PBXGroup;
 			children = (
-				3620AD9A229FC72F00AB5C48 /* TFY_ModelSqliteHeader.h */,
+				3638B05A2508758000F71DC7 /* TFY_ModelKit.h */,
 				3623A0522275354D00BEE18F /* NSObject+TFY_Model.h */,
 				3623A0512275354D00BEE18F /* NSObject+TFY_Model.m */,
 				3620AD94229FB9A200AB5C48 /* TFY_ModelSqlite.h */,
@@ -549,7 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SEXG86U92J;
+				DEVELOPMENT_TEAM = QH95759TSS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TFY_Model/PCH/TFY_PrefixHeader.pch;
 				INFOPLIST_FILE = TFY_Model/Info.plist;
@@ -569,7 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SEXG86U92J;
+				DEVELOPMENT_TEAM = QH95759TSS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TFY_Model/PCH/TFY_PrefixHeader.pch;
 				INFOPLIST_FILE = TFY_Model/Info.plist;

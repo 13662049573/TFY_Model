@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "TFY_ModelSqliteHeader.h"
 #import "TFY_DetailspageModel.h"
 #import "TFY_normal_faceModel.h"
 
