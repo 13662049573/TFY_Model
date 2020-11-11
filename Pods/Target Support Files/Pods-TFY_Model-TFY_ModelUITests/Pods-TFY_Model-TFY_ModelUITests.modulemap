@@ -1,0 +1,6 @@
+framework module Pods_TFY_Model_TFY_ModelUITests {
+  umbrella header "Pods-TFY_Model-TFY_ModelUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

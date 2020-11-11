@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-TFY_Model-TFY_ModelUITests/Pods-TFY_Model-TFY_ModelUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/TFY_AutoLayout/TFY_AutoLayout.framework
+${BUILT_PRODUCTS_DIR}/TFY_LayoutCategoryKit/TFY_LayoutCategoryKit.framework
+${BUILT_PRODUCTS_DIR}/TFY_Navigation/TFY_Navigation.framework
+${BUILT_PRODUCTS_DIR}/TFY_ProgressHUD/TFY_ProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/TFY_RouterMessageKit/TFY_RouterMessageKit.framework

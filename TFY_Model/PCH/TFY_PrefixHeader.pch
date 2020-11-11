@@ -9,7 +9,17 @@
 #ifndef TFY_PrefixHeader_pch
 #define TFY_PrefixHeader_pch
 
+#ifdef __OBJC__
+
+#import <TFY_AutoLayout.h>
+#import <TFY_LayoutCategoryKit.h>
+#import <TFY_Navigation.h>
+#import <TFY_ProgressHMB.h>
+#import <TFY_RouterMessageKit.h>
+
+#endif
+
 #import "TFY_ModelKit.h"
-#import "TFY_Navigation.h"
+
 
 #endif /* TFY_PrefixHeader_pch */
