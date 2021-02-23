@@ -63,6 +63,15 @@
  */
 @property (nonatomic, strong) id SessionId;
 
+///-- isNonProfit : 1
+@property (nonatomic, copy) NSString *isNonProfit;
+///-- name : BeJson
+@property (nonatomic, copy) NSString *name;
+///-- url : url
+@property (nonatomic, copy) NSString *url;
+///-- page : 88
+@property (nonatomic, assign) NSInteger page;
+
 @end
 
 
